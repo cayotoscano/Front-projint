@@ -1,0 +1,14 @@
+/* área ocupando a tela inteira */
+.home-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #4f8dfb, #84b6ff);
+}
+
+/* caixinha central */
+.home-box {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 90%;
+}

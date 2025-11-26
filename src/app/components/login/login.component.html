@@ -1,0 +1,42 @@
+<form class="container-fluid p-0 m-0 d-flex justify-content-center align-items-center"
+      (ngSubmit)="login()">
+
+  <div class="login-wrapper">
+    <div class="login-box p-4 shadow">
+      <h2 class="text-center mb-4">Login</h2>
+
+      <!-- E-mail -->
+      <div class="mb-3">
+        <label for="username" class="form-label">E-mail</label>
+        <input type="email"
+               id="username"
+               class="form-control"
+               placeholder="Digite seu e-mail"
+               [(ngModel)]="email"
+               name="email"
+               required>
+      </div>
+
+      <!-- Senha -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password"
+               id="password"
+               class="form-control"
+               placeholder="Digite sua senha"
+               [(ngModel)]="senha"
+               name="senha"
+               required>
+      </div>
+
+      <!-- Links -->
+      <div class="d-flex justify-content-between mb-3">
+        <a routerLink="/forgot" class="small text-primary">Esqueci a senha</a>
+        <a routerLink="/register" class="small text-primary">Registrar</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Entrar</button>
+    </div>
+  </div>
+
+</form>
